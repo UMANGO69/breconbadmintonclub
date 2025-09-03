@@ -1,0 +1,266 @@
+/* Reset & global */
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+  scroll-behavior: smooth;
+}
+
+/* Navigation */
+.nav {
+  background-color: #000;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.nav h1 a {
+  color: chartreuse;
+  font-size: 1.8rem;
+  text-decoration: none;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: white;
+  font-size: 1rem;
+  padding: 8px 12px;
+  transition: 0.3s;
+}
+
+.nav-links li a:hover {
+  background-color: white;
+  color: blue;
+  border-radius: 4px;
+}
+
+/* Hamburger */
+.menu-toggle {
+  display: none;
+  font-size: 28px;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+/* Sections */
+section {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+#About {
+  background: url(images/bg1.jpg) center/cover no-repeat;
+  color: white;
+  min-height: 100vh;   /* full viewport height */
+  background-size: cover;   /* scale background to cover screen */
+  background-position: center; /* keep it centered */
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+background-size: cover;
+background-attachment: scroll;  /* avoid issues on mobile */
+
+}
+
+#About img {
+  width: 180px;
+  height: 180px;
+  margin: 20px auto;
+  display: block;
+}
+
+.second {
+  font-size: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Location */
+#Location {
+  background: url(images/bg2.jpg) center/cover no-repeat;
+  min-height: 100vh;   /* full viewport height */
+  background-size: cover;   /* scale background to cover screen */
+  background-position: center; /* keep it centered */
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+background-size: cover;
+background-attachment: scroll;  /* avoid issues on mobile */
+align-items:center;
+
+}
+#Location iframe {
+  width: 90%;
+  max-width: 600px;
+  height: 300px;
+  border: none;
+}
+
+/* News */
+#News {
+  background: url(images/bg3.jpg) center/cover no-repeat;
+  color: white;
+min-height: 100vh;   /* full viewport height */
+  background-size: cover;   /* scale background to cover screen */
+  background-position: center; /* keep it centered */
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* center content vertically */
+background-size: cover;
+background-attachment: scroll;  /* avoid issues on mobile */
+
+}
+
+#News table {
+  margin: 20px auto;
+  border-collapse: collapse;
+  color: white;
+}
+
+#News table td {
+  border: 1px solid white;
+  padding: 10px 20px;
+}
+
+#News h2 {
+  margin-top: 30px;
+}
+
+/* Contact */
+#Contact {
+  background: url(images/bg4.jpeg) center/cover no-repeat;
+min-height: 100vh;   /* full viewport height */
+  background-size: cover;   /* scale background to cover screen */
+  background-position: center; /* keep it centered */
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* center content vertically */
+background-size: cover;
+background-attachment: scroll;  /* avoid issues on mobile */
+
+}
+/* Container for buttons */
+.social-buttons {
+  display: flex;
+  gap: 35px;       /* space between buttons */
+  margin-left: 10%;
+  margin-top: 1%;
+}
+
+/* General button style */
+.fa {
+  padding: 15px;
+  font-size: 30px;
+  width: 25px;
+  height: 25px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+  display: flex;              /* center icons inside */
+  justify-content: center;
+  align-items: center;
+}
+
+/* Facebook */
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+/* WhatsApp */
+.fa-whatsapp {
+  background: #25D366;
+  color: white;
+}
+
+/* Email */
+.fa-envelope {
+  background: #D44638;
+  color: white;
+}
+
+/* Hover effect */
+.fa:hover {
+  opacity: 0.8;
+}
+.container {
+  max-width: 600px;
+  margin: 20px auto;
+  background-color: #f2f2f2;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+input[type=text], select, textarea {
+  width: 80%;
+  padding: 10px;
+  margin: 8px 0 16px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+input[type=submit] {
+  background-color: #2E8B57;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #32CD32;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+  
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background: #000;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 100%;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .nav-links li {
+    text-align: center;
+    margin: 10px 0;
+  }
+
+  .second {
+    font-size: 18px;
+    padding: 0 10px;
+  }
+
+  #Location iframe {
+    height: 250px;
+  }
+}

@@ -1,0 +1,106 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Brecon Badminton Club</title>
+  <link rel="stylesheet" href="design.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="nav">
+    <h1><a href="#Brecon">Brecon Badminton Club</a></h1>
+    <button class="menu-toggle" aria-label="Toggle Menu">&#9776;</button>
+    <ul class="nav-links">
+      <li><a href="#About">About us</a></li>
+      <li><a href="#Location">Location</a></li>
+      <li><a href="#News">Club Nights</a></li>
+      <li><a href="#Contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- About -->
+  <section id="About">
+    <div class="first">
+      <img src="images/logo.jpg" alt="Brecon Badminton Club Logo">
+    </div>
+    <div class="second">
+      <p>
+        Brecon Badminton Club was originally formed to provide the best training and encourage
+        the younger generation to play sports for their physical and mental development.
+        Players will be able to improve and take their game to the next level through
+        advanced training and exposure in youth badminton tournaments.
+      </p>
+    </div>
+  </section>
+
+  <!-- Location -->
+  <section id="Location">
+    <h1>Located in</h1>
+    <h2>St Paul's Dr, Swindon SN3 5DA</h2>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2480.439051054334!2d-1.7319129236785713!3d51.560184306846246!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4871458c28149cd9%3A0x6ff1db2bd36dc2d1!2sDorcan%20Recreation%20Complex!5e0!3m2!1sen!2suk!4v1756682906148!5m2!1sen!2suk"
+      width="600" height="450" style="border:0;" allowfullscreen loading="lazy"></iframe>
+  </section>
+
+  <!-- News -->
+  <section id="News">
+    <h1>Club Nights</h1>
+    <table>
+      <tr><td>Tuesday</td><td>7:30 - 10:00 PM</td></tr>
+      <tr><td>Friday</td><td>7:30 - 10:00 PM</td></tr>
+    </table>
+    <h2>Matches and Fixtures</h2>
+    <p>No matches currently</p>
+  </section>
+
+  <!-- Contact -->
+  <section id="Contact">
+<div class = "social-buttons">
+    <a href="https://www.facebook.com/people/Brecon-Badminton-Club/61561484337253" class="fa fa-facebook"></a>
+
+ <a href="https://wa.me/447123456789" 
+     class="fa fa-whatsapp" target="_blank"></a>
+
+<a href="mailto:breconclub@gmail.com" 
+     class="fa fa-envelope" target="_blank"></a>
+</div>
+
+    <div class="container">
+      <form action="https://formspree.io/f/xpwjrgbv" method="POST">
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="firstname" placeholder="Your first name.."><br>
+
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lastname" placeholder="Your last name.."><br>
+
+        <label for="email">E-mail        </label>
+        <input type="text" id="email" name="email" placeholder="Write your email..">
+<br>
+        <label for="type">About you</label>
+        <select id="type" name="type">
+          <option value="Individual">Individual</option>
+          <option value="Business">Business</option>
+          <option value="Badminton Club">Badminton Club</option>
+        </select>
+<br>
+        <label for="Message">Leave your message</label>
+<br>
+        <textarea id="Message" name="Message" placeholder="Write something.." style="height:80px; width:90%;"></textarea>
+
+        <input type="submit" value="Submit">
+      </form>
+    </div>
+  </section>
+
+  <!-- JS for Hamburger Menu -->
+  <script>
+    const menuToggle = document.querySelector('.menu-toggle');
+    const navLinks = document.querySelector('.nav-links');
+
+    menuToggle.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
+  </script>
+</body>
+</html>
