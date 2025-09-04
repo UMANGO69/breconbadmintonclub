@@ -185,11 +185,6 @@ background-attachment: scroll;  /* avoid issues on mobile */
   color: white;
 }
 
-/* WhatsApp */
-.fa-whatsapp {
-  background: #25D366;
-  color: white;
-}
 
 /* Email */
 .fa-envelope {
@@ -265,3 +260,4 @@ background-attachment: scroll;  /* avoid issues on mobile */
     height: 250px;
   }
 }
+
