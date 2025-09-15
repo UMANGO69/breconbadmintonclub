@@ -86,7 +86,7 @@ background-attachment: scroll;  /* avoid issues on mobile */
 
 .second {
   font-size: 20px;
-  max-width: 800px;
+  max-width: 1000px;
   margin: 0 auto;
 }
 
@@ -253,13 +253,15 @@ background-attachment: scroll;  /* avoid issues on mobile */
 
   .second {
     font-size: 18px;
-    padding: 55px;
+    padding: 20px;
+    line-height: 1.3;
   }
 
   #Location iframe {
     height: 250px;
   }
 }
+
 
 
 
