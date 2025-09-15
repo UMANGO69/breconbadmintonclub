@@ -254,13 +254,13 @@ background-attachment: scroll;  /* avoid issues on mobile */
   .second {
     font-size: 18px;
     padding: 55px;
-    line-height: 1.3px;
   }
 
   #Location iframe {
     height: 250px;
   }
 }
+
 
 
 
